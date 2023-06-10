@@ -1,3 +1,193 @@
-// .form-control {
-//   background-color: $collectiv-light-blue;
-// }
+// Form Calendar
+.card__calender {
+  width: 600px;
+  height: auto;
+  margin:10px;
+  justify-content: center;
+  display: flex;
+}
+
+
+.simple-calendar {
+  width: 600px;
+  height: auto;
+
+  table {
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    background-color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+
+  }
+
+  tr {
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  th {
+    padding: 6px;
+    border-bottom: 2px solid white;
+    border-collapse: collapse;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 0px none rgb(51, 51, 51);
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 10px;
+    background-color: white;
+  }
+
+  .prev-month, .next-month {
+    color: transparent;
+  }
+
+  .fa-chevron-left::before, .fa-chevron-right::before {
+    color:$collectiv-dark-blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .fa-chevron-left:hover, .fa-chevron-right:hover {
+    font-size: larger;
+  }
+
+  .current-month {
+    color:$collectiv-dark-blue;
+  }
+
+  .current-month:hover {
+    color:$collectiv-medium-blue;
+    font-weight: bold;
+  }
+
+  td {
+    padding: 6px;
+    vertical-align: top;
+    width: 14%;
+  }
+
+  .day {
+    height: 80px;
+    width: 80px;
+  }
+
+  .calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+
+  .today {
+     color: $collectiv-green;
+     font-size: 25px;
+  }
+}
+
+// Form Category Create
+.create__category__content__middle {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create__category__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  padding: 25px;
+  background-color: #D9D9D9;
+  border-radius: 2px;
+  margin-top: 70px;
+}
+
+// Form Create
+.create__post__content__middle {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create__post__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  padding: 25px;
+  background-color: #D9D9D9;
+  border-radius: 2px;
+  margin-top: 40px;
+}
+
+.button__cancel {
+  color: black;
+  background-color: rgb(242, 135, 135);
+  border-width: 0px;
+  border-radius: 2px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  transition-duration: 0.5s;
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+.button__cancel:hover {
+  color: black;
+  background-color: red;
+
+}
+
+// Form Edit Profile
+.edit__profil__content__middle{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit__profil__box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  padding: 25px;
+  background-color: #D9D9D9;
+  margin-top: 70px;
+}
+
+// edit profile
+.card__profile {
+  height: 400px;
+  width: 280px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.rounded-circle {
+  width: 56px;
+  border-radius: 50%;
+}
+
+.card__karma {
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
