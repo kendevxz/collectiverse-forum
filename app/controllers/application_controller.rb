@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
 
 
   def set_theme
+    cookies[:theme] = 'dark' #switch color mode doesnt work because of this code
     if params[:theme].present?
       theme = params[:theme].to_sym
       # session[:theme] = theme
