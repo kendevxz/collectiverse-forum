@@ -23,6 +23,8 @@ class ApplicationController < ActionController::Base
       # session[:theme] = theme
       cookies[:theme] = theme
       redirect_to(request.referrer || root_path)
+    else
+      cookies[:theme] = 'dark' #switch color mode doesnt work because of this code
     end
   end
 end
